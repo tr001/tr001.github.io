@@ -145,6 +145,70 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/23/laravel_orm_connect_to_write_db/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Terri Chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Terri's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/12/23/laravel_orm_connect_to_write_db/" class="post-title-link" itemprop="url">How to force Laravel ORM to connect to the write DB?</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2020-12-23 20:02:32 / 修改時間：20:09:50" itemprop="dateCreated datePublished" datetime="2020-12-23T20:02:32+08:00">2020-12-23</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="laravel-ORM-讀寫分離的-db-，如何強迫取得來自-write-db-的資料？"><a href="#laravel-ORM-讀寫分離的-db-，如何強迫取得來自-write-db-的資料？" class="headerlink" title="laravel ORM 讀寫分離的 db ，如何強迫取得來自 write db 的資料？"></a>laravel ORM 讀寫分離的 db ，如何強迫取得來自 write db 的資料？</h1><h2 id="讓-ORM-讀寫入的那一台-DB"><a href="#讓-ORM-讀寫入的那一台-DB" class="headerlink" title="讓 ORM 讀寫入的那一台 DB"></a>讓 ORM 讀寫入的那一台 DB</h2><p><code>Model::onWriteConnection()...</code></p>
+<h2 id="讓-join-的-table，也讀寫入的那台-DB"><a href="#讓-join-的-table，也讀寫入的那台-DB" class="headerlink" title="讓 join 的 table，也讀寫入的那台 DB"></a>讓 join 的 table，也讀寫入的那台 DB</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-&gt;with([&#39;joined_table&#39; &#x3D;&gt; function ($query) &#123;</span><br><span class="line">    $query-&gt;useWritePdo();</span><br><span class="line">&#125;])</span><br></pre></td></tr></table></figure>
+<h2 id="組合"><a href="#組合" class="headerlink" title="組合"></a>組合</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Model::onWriteConnection()-&gt;with([&#39;joined_table&#39;&#x3D;&gt;function($query)&#123;</span><br><span class="line">   $query-&gt;useWritePdo();</span><br><span class="line">&#125;])-&gt;find($id);</span><br></pre></td></tr></table></figure>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/39347718/eloquent-pre-loading-relationships-against-db-write-connection">https://stackoverflow.com/questions/39347718/eloquent-pre-loading-relationships-against-db-write-connection</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/20/install-codimd-in-windows/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -282,7 +346,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
