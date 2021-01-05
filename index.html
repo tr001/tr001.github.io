@@ -145,6 +145,78 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/05/how_to_add_react_js_environment_variables/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Terri Chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Terri's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/05/how_to_add_react_js_environment_variables/" class="post-title-link" itemprop="url">How to add environment variables in react js?</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2021-01-05 23:05:05 / 修改時間：23:11:39" itemprop="dateCreated datePublished" datetime="2021-01-05T23:05:05+08:00">2021-01-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="在-react-js，如何加上-env-檔案以傳入自訂變數？"><a href="#在-react-js，如何加上-env-檔案以傳入自訂變數？" class="headerlink" title="在 react js，如何加上 .env 檔案以傳入自訂變數？"></a>在 react js，如何加上 .env 檔案以傳入自訂變數？</h1><h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
+<li>在 root 加上 .env 檔案，不要放在 /src 底下</li>
+<li>.env 檔案內，加上以 REACT_APP_XXXX 開頭的變數<ul>
+<li>例如：<code>REACT_APP_API_HOST=http://localhost:80</code></li>
+</ul>
+</li>
+<li>在 .js 檔案中，如何取用?<ul>
+<li>不需要 import，直接使用 process.env.REACT_APP_XXXX 即可取得</li>
+</ul>
+</li>
+</ol>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://create-react-app.dev/docs/adding-custom-environment-variables/">https://create-react-app.dev/docs/adding-custom-environment-variables/</a> </li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/23/laravel_orm_connect_to_write_db/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -346,9 +418,13 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">文章</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">標籤</span>
       </div>
   </nav>
 </div>
