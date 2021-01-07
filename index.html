@@ -145,6 +145,74 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/07/let_mysql_or_laravel_orm_result_sort_by_specific_value/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Terri Chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Terri's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/07/let_mysql_or_laravel_orm_result_sort_by_specific_value/" class="post-title-link" itemprop="url">How to let mysql or laravel orm result sort by specific value?</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2021-01-07 20:08:33 / 修改時間：20:15:18" itemprop="dateCreated datePublished" datetime="2021-01-07T20:08:33+08:00">2021-01-07</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="在-Laravel-Mysql，如何讓-DB-的搜尋結果以指定的順序排序？"><a href="#在-Laravel-Mysql，如何讓-DB-的搜尋結果以指定的順序排序？" class="headerlink" title="在 Laravel / Mysql，如何讓 DB 的搜尋結果以指定的順序排序？"></a>在 Laravel / Mysql，如何讓 DB 的搜尋結果以指定的順序排序？</h1><ul>
+<li>問題：要取得 table 當中 id 為 20, 21, 1, 7 的資料，並要求取回的資料排序依照此順序</li>
+</ul>
+<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM table WHERE id IN (20, 21, 1, 7) ORDER BY FIELD (id, 20, 21, 1, 7)</span><br></pre></td></tr></table></figure>
+<h2 id="Laravel-Eloquent-ORM"><a href="#Laravel-Eloquent-ORM" class="headerlink" title="Laravel Eloquent ORM"></a>Laravel Eloquent ORM</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$id_list &#x3D; [20, 21, 1, 7];</span><br><span class="line">$id_list_string &#x3D; implode(&quot;, &quot;, $id_list);</span><br><span class="line"></span><br><span class="line">Table::whereIn(&#39;id&#39;, $id_list)</span><br><span class="line">    -&gt;orderByRaw(&quot;FIELD (id, &#123;$id_list_string&#125;)&quot;)</span><br><span class="line">    -&gt;get();</span><br></pre></td></tr></table></figure>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/8322849/mysql-order-by-specific-id-values">https://stackoverflow.com/questions/8322849/mysql-order-by-specific-id-values</a></li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/29115385/how-to-make-laravel-eloquent-in-query">https://stackoverflow.com/questions/29115385/how-to-make-laravel-eloquent-in-query</a></li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/36007877/how-to-sort-by-a-specific-value-in-laravel">https://stackoverflow.com/questions/36007877/how-to-sort-by-a-specific-value-in-laravel</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/05/how_to_add_react_js_environment_variables/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -168,10 +236,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
-              
 
-              <time title="創建時間：2021-01-05 23:05:05 / 修改時間：23:11:39" itemprop="dateCreated datePublished" datetime="2021-01-05T23:05:05+08:00">2021-01-05</time>
+              <time title="創建時間：2021-01-05 23:05:05" itemprop="dateCreated datePublished" datetime="2021-01-05T23:05:05+08:00">2021-01-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時間：2021-01-07 20:10:37" itemprop="dateModified" datetime="2021-01-07T20:10:37+08:00">2021-01-07</time>
+              </span>
 
           
 
@@ -418,7 +492,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
