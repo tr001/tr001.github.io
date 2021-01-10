@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/</loc>
+    
+    <lastmod>2021-01-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/how_to_add_react_js_environment_variables/</loc>
+    
+    <lastmod>2021-01-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/laravel_orm_connect_to_write_db/</loc>
+    
+    <lastmod>2020-12-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/install-codimd-in-windows/</loc>
+    
+    <lastmod>2020-12-20</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://blog.nutoms.com/</loc>
+    <lastmod>2021-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://blog.nutoms.com/tags/react/</loc>
+    <lastmod>2021-01-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+</urlset>
