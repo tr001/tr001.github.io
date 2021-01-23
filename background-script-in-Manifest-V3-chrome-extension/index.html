@@ -20,19 +20,22 @@
     var CONFIG = {"hostname":"blog.nutoms.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="如何在 windows 安裝 codimd前期準備 - 安裝 docker 更新至 windows 10 https:&#x2F;&#x2F;www.microsoft.com&#x2F;zh-tw&#x2F;software-download&#x2F;windows10   啟用 Hyper-V 和容器功能 安裝 docker  https:&#x2F;&#x2F;hub.docker.com&#x2F;editions&#x2F;community&#x2F;docker-ce-deskt">
+  <meta name="description" content="chrome extension manifest V3 無法載入 background.js 問題：chrome extension 官方的 getstarted，在 Manifest V3 跑不起來 文件：Getting started - Chrome Developers  Step-by-step instructions on how to create a Chrome Extens">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to install codimd in windows?">
-<meta property="og:url" content="https://blog.nutoms.com/install-codimd-in-windows/index.html">
+<meta property="og:title" content="How to load background script in manifest V3 chrome extension">
+<meta property="og:url" content="https://blog.nutoms.com/background-script-in-Manifest-V3-chrome-extension/index.html">
 <meta property="og:site_name" content="Terri&#39;s blog">
-<meta property="og:description" content="如何在 windows 安裝 codimd前期準備 - 安裝 docker 更新至 windows 10 https:&#x2F;&#x2F;www.microsoft.com&#x2F;zh-tw&#x2F;software-download&#x2F;windows10   啟用 Hyper-V 和容器功能 安裝 docker  https:&#x2F;&#x2F;hub.docker.com&#x2F;editions&#x2F;community&#x2F;docker-ce-deskt">
+<meta property="og:description" content="chrome extension manifest V3 無法載入 background.js 問題：chrome extension 官方的 getstarted，在 Manifest V3 跑不起來 文件：Getting started - Chrome Developers  Step-by-step instructions on how to create a Chrome Extens">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2020-12-20T06:38:45.773Z">
-<meta property="article:modified_time" content="2020-12-20T06:59:37.086Z">
+<meta property="og:image" content="https://i.imgur.com/zYKlHBg.png">
+<meta property="article:published_time" content="2021-01-23T09:14:03.000Z">
+<meta property="article:modified_time" content="2021-01-23T09:18:53.756Z">
 <meta property="article:author" content="Terri Chen">
+<meta property="article:tag" content="manifestV3">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgur.com/zYKlHBg.png">
 
-<link rel="canonical" href="https://blog.nutoms.com/install-codimd-in-windows/">
+<link rel="canonical" href="https://blog.nutoms.com/background-script-in-Manifest-V3-chrome-extension/">
 
 
 <script id="page-configurations">
@@ -45,7 +48,7 @@
   };
 </script>
 
-  <title>How to install codimd in windows? | Terri's blog</title>
+  <title>How to load background script in manifest V3 chrome extension | Terri's blog</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCPC2XGB8V"></script>
     <script>
@@ -159,7 +162,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/install-codimd-in-windows/">
+    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/background-script-in-Manifest-V3-chrome-extension/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -172,7 +175,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          How to install codimd in windows?
+          How to load background script in manifest V3 chrome extension
         </h1>
 
         <div class="post-meta">
@@ -183,7 +186,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2020-12-20 14:38:45 / 修改時間：14:59:37" itemprop="dateCreated datePublished" datetime="2020-12-20T14:38:45+08:00">2020-12-20</time>
+              <time title="創建時間：2021-01-23 17:14:03 / 修改時間：17:18:53" itemprop="dateCreated datePublished" datetime="2021-01-23T17:14:03+08:00">2021-01-23</time>
             </span>
 
           
@@ -195,8 +198,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/install-codimd-in-windows/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="install-codimd-in-windows/" itemprop="commentCount"></span>
+    <a title="disqus" href="/background-script-in-Manifest-V3-chrome-extension/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="background-script-in-Manifest-V3-chrome-extension/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -211,22 +214,43 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="如何在-windows-安裝-codimd"><a href="#如何在-windows-安裝-codimd" class="headerlink" title="如何在 windows 安裝 codimd"></a>如何在 windows 安裝 codimd</h1><h2 id="前期準備-安裝-docker"><a href="#前期準備-安裝-docker" class="headerlink" title="前期準備 - 安裝 docker"></a>前期準備 - 安裝 docker</h2><ul>
-<li>更新至 windows 10<ul>
-<li><a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-tw/software-download/windows10">https://www.microsoft.com/zh-tw/software-download/windows10</a></li>
+        <h2 id="chrome-extension-manifest-V3-無法載入-background-js"><a href="#chrome-extension-manifest-V3-無法載入-background-js" class="headerlink" title="chrome extension manifest V3 無法載入 background.js"></a>chrome extension manifest V3 無法載入 background.js</h2><ul>
+<li>問題：chrome extension 官方的 getstarted，在 Manifest V3 跑不起來</li>
+<li>文件：<a target="_blank" rel="noopener" href="https://developer.chrome.com/docs/extensions/mv3/getstarted/">Getting started - Chrome Developers</a> <ul>
+<li>Step-by-step instructions on how to create a Chrome Extension.</li>
+<li>Updated on Wednesday, November 18, 2020</li>
 </ul>
 </li>
-<li>啟用 Hyper-V 和容器功能</li>
-<li>安裝 docker <ul>
-<li><a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a></li>
-</ul>
+<li>遇到的錯誤：  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">background.js not working</span><br><span class="line">chrome.storage.sync.set undefined</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-<h2 id="安裝-codimd"><a href="#安裝-codimd" class="headerlink" title="安裝 codimd"></a>安裝 codimd</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://hackmd.io/s/codimd-docker-deployment">https://hackmd.io/s/codimd-docker-deployment</a></li>
+<h2 id="處理方式"><a href="#處理方式" class="headerlink" title="處理方式"></a>處理方式</h2><ol>
+<li><p>確認 Chrome 更新到 88</p>
+<blockquote>
+<p>Manifest V3 is available beginning with Chrome 88</p>
+</blockquote>
+</li>
+<li><p>處理無法載入 background.js 的情況</p>
+</li>
+</ol>
+<ul>
+<li><p>原本的範例：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;background&quot;: &#123;</span><br><span class="line">    &quot;scripts&quot;: [&quot;background.js&quot;],</span><br><span class="line">    &quot;persistent&quot;: false</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+<li><p>改寫成：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;background&quot;: &#123;</span><br><span class="line">    &quot;service_worker&quot;: &quot;background.js&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Replace background.page or background.scripts with background.service_worker in manifest.json. Note that the service_worker field takes a string, not an array of strings.</p>
+<p>Remove background.persistent from manifest.json.</p>
+</blockquote>
+</li>
 </ul>
-<h2 id="如何取得直接存取-postgresql-的資料？"><a href="#如何取得直接存取-postgresql-的資料？" class="headerlink" title="如何取得直接存取 postgresql 的資料？"></a>如何取得直接存取 postgresql 的資料？</h2><ul>
-<li>改寫 modified docker-compose.yml，置換 volume path<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">version: &quot;3&quot;</span><br><span class="line">services:</span><br><span class="line">  database:</span><br><span class="line">    image: postgres:11.6-alpine</span><br><span class="line">    environment:</span><br><span class="line">      - POSTGRES_USER&#x3D;username</span><br><span class="line">      - POSTGRES_PASSWORD&#x3D;password</span><br><span class="line">      - POSTGRES_DB&#x3D;codimd</span><br><span class="line">    ports:</span><br><span class="line">      - &quot;5432:5432&quot;</span><br><span class="line">    volumes:</span><br><span class="line">      - &#x2F;c&#x2F;terri&#x2F;mount&#x2F;var&#x2F;lib&#x2F;postgresql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;postgresql&#x2F;data</span><br><span class="line">    restart: always</span><br><span class="line">  codimd:</span><br><span class="line">    image: nabo.codimd.dev&#x2F;hackmdio&#x2F;hackmd:2.2.0</span><br><span class="line">    environment:</span><br><span class="line">      - CMD_DB_URL&#x3D;postgres:&#x2F;&#x2F;username:password@database&#x2F;codimd</span><br><span class="line">      - CMD_USECDN&#x3D;false</span><br><span class="line">    depends_on:</span><br><span class="line">      - database</span><br><span class="line">    ports:</span><br><span class="line">      - &quot;3000:3000&quot;</span><br><span class="line">    volumes:</span><br><span class="line">      - &#x2F;c&#x2F;terri&#x2F;mount&#x2F;var&#x2F;app&#x2F;public&#x2F;codimd&#x2F;uploads:&#x2F;home&#x2F;hackmd&#x2F;app&#x2F;public&#x2F;uploads</span><br><span class="line">    restart: always</span><br></pre></td></tr></table></figure></li>
+<h2 id="驗證"><a href="#驗證" class="headerlink" title="驗證"></a>驗證</h2><ul>
+<li>出現下面框起來的這行代表有成功<br><img src="https://i.imgur.com/zYKlHBg.png"></li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/">https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist/">https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist/</a></li>
 </ul>
 
     </div>
@@ -236,17 +260,20 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/manifestV3/" rel="tag"># manifestV3</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/laravel_orm_connect_to_write_db/" rel="next" title="How to force Laravel ORM to connect to the write DB?">
-      How to force Laravel ORM to connect to the write DB? <i class="fa fa-chevron-right"></i>
+    <a href="/let_mysql_or_laravel_orm_result_sort_by_specific_value/" rel="prev" title="How to let mysql or laravel orm result sort by specific value?">
+      <i class="fa fa-chevron-left"></i> How to let mysql or laravel orm result sort by specific value?
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -312,7 +339,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%9C%A8-windows-%E5%AE%89%E8%A3%9D-codimd"><span class="nav-number">1.</span> <span class="nav-text">如何在 windows 安裝 codimd</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E6%9C%9F%E6%BA%96%E5%82%99-%E5%AE%89%E8%A3%9D-docker"><span class="nav-number">1.1.</span> <span class="nav-text">前期準備 - 安裝 docker</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-codimd"><span class="nav-number">1.2.</span> <span class="nav-text">安裝 codimd</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%8F%96%E5%BE%97%E7%9B%B4%E6%8E%A5%E5%AD%98%E5%8F%96-postgresql-%E7%9A%84%E8%B3%87%E6%96%99%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">如何取得直接存取 postgresql 的資料？</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#chrome-extension-manifest-V3-%E7%84%A1%E6%B3%95%E8%BC%89%E5%85%A5-background-js"><span class="nav-number">1.</span> <span class="nav-text">chrome extension manifest V3 無法載入 background.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%99%95%E7%90%86%E6%96%B9%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">處理方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A9%97%E8%AD%89"><span class="nav-number">3.</span> <span class="nav-text">驗證</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">4.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -430,9 +457,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://blog.nutoms.com/install-codimd-in-windows/";
-    this.page.identifier = "install-codimd-in-windows/";
-    this.page.title = "How to install codimd in windows?";
+    this.page.url = "https://blog.nutoms.com/background-script-in-Manifest-V3-chrome-extension/";
+    this.page.identifier = "background-script-in-Manifest-V3-chrome-extension/";
+    this.page.title = "How to load background script in manifest V3 chrome extension";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {

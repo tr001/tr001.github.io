@@ -154,6 +154,116 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/background-script-in-Manifest-V3-chrome-extension/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Terri Chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Terri's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/background-script-in-Manifest-V3-chrome-extension/" class="post-title-link" itemprop="url">How to load background script in manifest V3 chrome extension</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2021-01-23 17:14:03 / 修改時間：17:18:53" itemprop="dateCreated datePublished" datetime="2021-01-23T17:14:03+08:00">2021-01-23</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/background-script-in-Manifest-V3-chrome-extension/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="background-script-in-Manifest-V3-chrome-extension/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="chrome-extension-manifest-V3-無法載入-background-js"><a href="#chrome-extension-manifest-V3-無法載入-background-js" class="headerlink" title="chrome extension manifest V3 無法載入 background.js"></a>chrome extension manifest V3 無法載入 background.js</h2><ul>
+<li>問題：chrome extension 官方的 getstarted，在 Manifest V3 跑不起來</li>
+<li>文件：<a target="_blank" rel="noopener" href="https://developer.chrome.com/docs/extensions/mv3/getstarted/">Getting started - Chrome Developers</a> <ul>
+<li>Step-by-step instructions on how to create a Chrome Extension.</li>
+<li>Updated on Wednesday, November 18, 2020</li>
+</ul>
+</li>
+<li>遇到的錯誤：  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">background.js not working</span><br><span class="line">chrome.storage.sync.set undefined</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="處理方式"><a href="#處理方式" class="headerlink" title="處理方式"></a>處理方式</h2><ol>
+<li><p>確認 Chrome 更新到 88</p>
+<blockquote>
+<p>Manifest V3 is available beginning with Chrome 88</p>
+</blockquote>
+</li>
+<li><p>處理無法載入 background.js 的情況</p>
+</li>
+</ol>
+<ul>
+<li><p>原本的範例：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;background&quot;: &#123;</span><br><span class="line">    &quot;scripts&quot;: [&quot;background.js&quot;],</span><br><span class="line">    &quot;persistent&quot;: false</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure></li>
+<li><p>改寫成：</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;background&quot;: &#123;</span><br><span class="line">    &quot;service_worker&quot;: &quot;background.js&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Replace background.page or background.scripts with background.service_worker in manifest.json. Note that the service_worker field takes a string, not an array of strings.</p>
+<p>Remove background.persistent from manifest.json.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="驗證"><a href="#驗證" class="headerlink" title="驗證"></a>驗證</h2><ul>
+<li>出現下面框起來的這行代表有成功<br><img src="https://i.imgur.com/zYKlHBg.png"></li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/">https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/</a></li>
+<li><a target="_blank" rel="noopener" href="https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist/">https://developer.chrome.com/docs/extensions/mv3/mv3-migration-checklist/</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -557,12 +667,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">標籤</span>
       </div>
   </nav>
