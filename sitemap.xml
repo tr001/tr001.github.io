@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.nutoms.com/using-docker-compose-to-install-codimd-in-windows/</loc>
+    
+    <lastmod>2021-01-23</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.nutoms.com/background-script-in-Manifest-V3-chrome-extension/</loc>
     
     <lastmod>2021-01-23</lastmod>
@@ -29,13 +36,6 @@
     
   </url>
   
-  <url>
-    <loc>https://blog.nutoms.com/install-codimd-in-windows/</loc>
-    
-    <lastmod>2020-12-20</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://blog.nutoms.com/</loc>
@@ -54,6 +54,13 @@
   
   <url>
     <loc>https://blog.nutoms.com/tags/manifestV3/</loc>
+    <lastmod>2021-01-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/tags/codimd/</loc>
     <lastmod>2021-01-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
