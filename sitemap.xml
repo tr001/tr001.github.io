@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/</loc>
+    
+    <lastmod>2021-02-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/laravel_orm_connect_to_write_db/</loc>
+    
+    <lastmod>2021-02-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/basic-linux-tmux-cheatsheet/</loc>
+    
+    <lastmod>2021-02-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.nutoms.com/using-docker-compose-to-install-codimd-in-windows/</loc>
     
     <lastmod>2021-01-23</lastmod>
@@ -16,30 +37,16 @@
   </url>
   
   <url>
-    <loc>https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/</loc>
-    
-    <lastmod>2021-01-07</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://blog.nutoms.com/how_to_add_react_js_environment_variables/</loc>
     
     <lastmod>2021-01-07</lastmod>
     
   </url>
   
-  <url>
-    <loc>https://blog.nutoms.com/laravel_orm_connect_to_write_db/</loc>
-    
-    <lastmod>2020-12-23</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://blog.nutoms.com/</loc>
-    <lastmod>2021-01-23</lastmod>
+    <lastmod>2021-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -47,21 +54,35 @@
   
   <url>
     <loc>https://blog.nutoms.com/tags/react/</loc>
-    <lastmod>2021-01-23</lastmod>
+    <lastmod>2021-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.nutoms.com/tags/manifestV3/</loc>
-    <lastmod>2021-01-23</lastmod>
+    <lastmod>2021-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.nutoms.com/tags/codimd/</loc>
-    <lastmod>2021-01-23</lastmod>
+    <lastmod>2021-02-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/tags/tmux/</loc>
+    <lastmod>2021-02-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nutoms.com/tags/laravel/</loc>
+    <lastmod>2021-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
