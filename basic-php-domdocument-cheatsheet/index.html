@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"blog.nutoms.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="tmux 的基本操作筆記進入 進入第 0 個 session   tmux attach -t 0 如果只有一個，直接 tmux attach 就可以了   切換到不一樣的 window  control b + number    建立 建立新的 session tmux   建立新的 window control b + c    關閉 結束可以直接關掉，注意不要使用 exit">
+  <meta name="description" content="如何操作 PHP dom? the CRUD of php node  A. CreateA-1. create node create a node $element &#x3D; $dom-&gt;createElement(&#39;div&#39;, &#39;text&#39;);   attach $element as a child of $parent (把新增的 $element 加到">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cheatsheet - linux tmux">
-<meta property="og:url" content="https://blog.nutoms.com/basic-linux-tmux-cheatsheet/index.html">
+<meta property="og:title" content="How to use basic php dom?">
+<meta property="og:url" content="https://blog.nutoms.com/basic-php-domdocument-cheatsheet/index.html">
 <meta property="og:site_name" content="Terri&#39;s blog">
-<meta property="og:description" content="tmux 的基本操作筆記進入 進入第 0 個 session   tmux attach -t 0 如果只有一個，直接 tmux attach 就可以了   切換到不一樣的 window  control b + number    建立 建立新的 session tmux   建立新的 window control b + c    關閉 結束可以直接關掉，注意不要使用 exit">
+<meta property="og:description" content="如何操作 PHP dom? the CRUD of php node  A. CreateA-1. create node create a node $element &#x3D; $dom-&gt;createElement(&#39;div&#39;, &#39;text&#39;);   attach $element as a child of $parent (把新增的 $element 加到">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-02-07T13:43:29.000Z">
-<meta property="article:modified_time" content="2021-02-07T13:45:34.695Z">
+<meta property="article:published_time" content="2021-03-03T12:51:34.705Z">
+<meta property="article:modified_time" content="2021-03-03T13:00:16.173Z">
 <meta property="article:author" content="Terri Chen">
-<meta property="article:tag" content="tmux">
+<meta property="article:tag" content="php dom">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://blog.nutoms.com/basic-linux-tmux-cheatsheet/">
+<link rel="canonical" href="https://blog.nutoms.com/basic-php-domdocument-cheatsheet/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>cheatsheet - linux tmux | Terri's blog</title>
+  <title>How to use basic php dom? | Terri's blog</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCPC2XGB8V"></script>
     <script>
@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/basic-linux-tmux-cheatsheet/">
+    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/basic-php-domdocument-cheatsheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          cheatsheet - linux tmux
+          How to use basic php dom?
         </h1>
 
         <div class="post-meta">
@@ -184,7 +184,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2021-02-07 21:43:29 / 修改時間：21:45:34" itemprop="dateCreated datePublished" datetime="2021-02-07T21:43:29+08:00">2021-02-07</time>
+              <time title="創建時間：2021-03-03 20:51:34 / 修改時間：21:00:16" itemprop="dateCreated datePublished" datetime="2021-03-03T20:51:34+08:00">2021-03-03</time>
             </span>
 
           
@@ -196,8 +196,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/basic-linux-tmux-cheatsheet/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="basic-linux-tmux-cheatsheet/" itemprop="commentCount"></span>
+    <a title="disqus" href="/basic-php-domdocument-cheatsheet/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="basic-php-domdocument-cheatsheet/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -212,29 +212,76 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="tmux-的基本操作筆記"><a href="#tmux-的基本操作筆記" class="headerlink" title="tmux 的基本操作筆記"></a>tmux 的基本操作筆記</h2><h3 id="進入"><a href="#進入" class="headerlink" title="進入"></a>進入</h3><ul>
-<li>進入第 0 個 session  <ul>
-<li><code>tmux attach -t 0</code></li>
-<li>如果只有一個，直接 <code>tmux attach</code> 就可以了</li>
+        <h1 id="如何操作-PHP-dom"><a href="#如何操作-PHP-dom" class="headerlink" title="如何操作 PHP dom?"></a>如何操作 PHP dom?</h1><ul>
+<li>the CRUD of php node</li>
+</ul>
+<h2 id="A-Create"><a href="#A-Create" class="headerlink" title="A. Create"></a>A. Create</h2><h3 id="A-1-create-node"><a href="#A-1-create-node" class="headerlink" title="A-1. create node"></a>A-1. create node</h3><ul>
+<li>create a node<ul>
+<li><code>$element = $dom-&gt;createElement(&#39;div&#39;, &#39;text&#39;);</code></li>
 </ul>
 </li>
-<li>切換到不一樣的 window <ul>
-<li><code>control b + number</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="建立"><a href="#建立" class="headerlink" title="建立"></a>建立</h3><ul>
-<li>建立新的 session<ul>
-<li><code>tmux</code></li>
-</ul>
-</li>
-<li>建立新的 window<ul>
-<li><code>control b + c</code></li>
+<li>attach $element as a child of $parent (把新增的 $element 加到 $parent 底下)<ul>
+<li><code>$parent-&gt;appendChild($element);</code></li>
 </ul>
 </li>
 </ul>
-<h3 id="關閉"><a href="#關閉" class="headerlink" title="關閉"></a>關閉</h3><ul>
-<li>結束可以直接關掉，注意不要使用 exit</li>
+<p><a target="_blank" rel="noopener" href="https://www.php.net/manual/en/domdocument.createelement.php">https://www.php.net/manual/en/domdocument.createelement.php</a></p>
+<h3 id="A-2-copy-a-node"><a href="#A-2-copy-a-node" class="headerlink" title="A-2. copy a node"></a>A-2. copy a node</h3><ul>
+<li><code>$dom-&gt;cloneNode($deep = false)</code><ul>
+<li> $deep defaulted false</li>
+</ul>
+</li>
+<li>copy first child of nodes (僅複製第一層的子節點)<ul>
+<li><code>$element = $dom-&gt;cloneNode();</code></li>
+<li><code>$element = $dom-&gt;cloneNode(false);</code></li>
+</ul>
+</li>
+<li>copy all descendant nodes (複製所有的子節點)<ul>
+<li><code>$element = $dom-&gt;cloneNode(true);</code></li>
+</ul>
+</li>
+<li>The reference of a node will be moved after cloning it. <ul>
+<li>注意，在 cloneNode 之後，就沒辦法使用 <code>$element-&gt; parentNode()</code> 找到它的父層</li>
+</ul>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.php.net/manual/en/domnode.clonenode.php">https://www.php.net/manual/en/domnode.clonenode.php</a></p>
+<h2 id="B-Read"><a href="#B-Read" class="headerlink" title="B. Read"></a>B. Read</h2><h3 id="B-1-get-nodes-with-the-specified-tag-name-找到有某個-tag-name-的-node"><a href="#B-1-get-nodes-with-the-specified-tag-name-找到有某個-tag-name-的-node" class="headerlink" title="B-1. get nodes with the specified tag name (找到有某個 tag name 的 node)"></a>B-1. get nodes with the specified tag name (找到有某個 tag name 的 node)</h3><p><code>$div = $dom-&gt;getElementsByTagName(&#39;div&#39;);</code></p>
+<h3 id="B-2-about-attribute"><a href="#B-2-about-attribute" class="headerlink" title="B-2. about attribute"></a>B-2. about attribute</h3><ul>
+<li>DOMElement::<code>hasAttribute()</code><ul>
+<li>Checks to see if attribute exists</li>
+</ul>
+</li>
+<li>DOMElement::<code>setAttribute()</code><ul>
+<li>Adds new attribute</li>
+</ul>
+</li>
+<li>DOMElement::<code>removeAttribute()</code><ul>
+<li>Removes attribute</li>
+</ul>
+</li>
+<li>example<ul>
+<li><code>$searchNode-&gt;getAttribute(&#39;ID&#39;);</code></li>
+</ul>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.php.net/manual/en/domelement.getattribute.php">https://www.php.net/manual/en/domelement.getattribute.php</a></p>
+<h2 id="C-Update"><a href="#C-Update" class="headerlink" title="C. Update"></a>C. Update</h2><h3 id="C-1-replace-current-node"><a href="#C-1-replace-current-node" class="headerlink" title="C-1. replace current node"></a>C-1. replace current node</h3><ul>
+<li><code>$href-&gt;parentNode-&gt;removeChild($href);</code><ul>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/3602207/php-cant-remove-node-from-domdocument">https://stackoverflow.com/questions/3602207/php-cant-remove-node-from-domdocument</a></li>
+</ul>
+</li>
+<li><code>$node-&gt;parentNode-&gt;parentNode-&gt;removeChild($node-&gt;parentNode);</code><ul>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/48288146/remove-parent-node-in-php">https://stackoverflow.com/questions/48288146/remove-parent-node-in-php</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="D-Delete"><a href="#D-Delete" class="headerlink" title="D. Delete"></a>D. Delete</h2><h3 id="D-1-remove-a-node"><a href="#D-1-remove-a-node" class="headerlink" title="D-1. remove a node"></a>D-1. remove a node</h3><ul>
+<li>from end to start (記得從最後一個往前)<ul>
+<li>the order will changed while replacing (因為置換之後，會改變編號)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$elements &#x3D; $completePage-&gt;getElementsByTagName(&#39;a&#39;);</span><br><span class="line">for ($i &#x3D; $elements-&gt;length; --$i &gt;&#x3D; 0; ) &#123;</span><br><span class="line">  $href &#x3D; $elements-&gt;item($i);</span><br><span class="line">  $href-&gt;parentNode-&gt;removeChild($href);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/15272726/how-to-delete-element-with-domdocument">https://stackoverflow.com/questions/15272726/how-to-delete-element-with-domdocument</a></li>
 </ul>
 
     </div>
@@ -245,7 +292,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/tmux/" rel="tag"># tmux</a>
+              <a href="/tags/php-dom/" rel="tag"># php dom</a>
           </div>
 
         
@@ -254,13 +301,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/background-script-in-Manifest-V3-chrome-extension/" rel="prev" title="How to load background script in manifest V3 chrome extension?">
-      <i class="fa fa-chevron-left"></i> How to load background script in manifest V3 chrome extension?
+    <a href="/basic-linux-tmux-cheatsheet/" rel="prev" title="cheatsheet - linux tmux">
+      <i class="fa fa-chevron-left"></i> cheatsheet - linux tmux
     </a></div>
-      <div class="post-nav-item">
-    <a href="/basic-php-domdocument-cheatsheet/" rel="next" title="How to use basic php dom?">
-      How to use basic php dom? <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -326,7 +370,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#tmux-%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E7%AD%86%E8%A8%98"><span class="nav-number">1.</span> <span class="nav-text">tmux 的基本操作筆記</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%B2%E5%85%A5"><span class="nav-number">1.1.</span> <span class="nav-text">進入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B"><span class="nav-number">1.2.</span> <span class="nav-text">建立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%9C%E9%96%89"><span class="nav-number">1.3.</span> <span class="nav-text">關閉</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E6%93%8D%E4%BD%9C-PHP-dom"><span class="nav-number">1.</span> <span class="nav-text">如何操作 PHP dom?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#A-Create"><span class="nav-number">1.1.</span> <span class="nav-text">A. Create</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#A-1-create-node"><span class="nav-number">1.1.1.</span> <span class="nav-text">A-1. create node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-2-copy-a-node"><span class="nav-number">1.1.2.</span> <span class="nav-text">A-2. copy a node</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#B-Read"><span class="nav-number">1.2.</span> <span class="nav-text">B. Read</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#B-1-get-nodes-with-the-specified-tag-name-%E6%89%BE%E5%88%B0%E6%9C%89%E6%9F%90%E5%80%8B-tag-name-%E7%9A%84-node"><span class="nav-number">1.2.1.</span> <span class="nav-text">B-1. get nodes with the specified tag name (找到有某個 tag name 的 node)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#B-2-about-attribute"><span class="nav-number">1.2.2.</span> <span class="nav-text">B-2. about attribute</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-Update"><span class="nav-number">1.3.</span> <span class="nav-text">C. Update</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-1-replace-current-node"><span class="nav-number">1.3.1.</span> <span class="nav-text">C-1. replace current node</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#D-Delete"><span class="nav-number">1.4.</span> <span class="nav-text">D. Delete</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#D-1-remove-a-node"><span class="nav-number">1.4.1.</span> <span class="nav-text">D-1. remove a node</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -444,9 +488,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://blog.nutoms.com/basic-linux-tmux-cheatsheet/";
-    this.page.identifier = "basic-linux-tmux-cheatsheet/";
-    this.page.title = "cheatsheet - linux tmux";
+    this.page.url = "https://blog.nutoms.com/basic-php-domdocument-cheatsheet/";
+    this.page.identifier = "basic-php-domdocument-cheatsheet/";
+    this.page.title = "How to use basic php dom?";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {
