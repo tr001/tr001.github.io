@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"blog.nutoms.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="在 Laravel &#x2F; Mysql，如何讓 DB 的搜尋結果以指定的順序排序？ 問題：要取得 table 當中 id 為 20, 21, 1, 7 的資料，並要求取回的資料排序依照此順序  MySQL1SELECT * FROM table WHERE id IN (20, 21, 1, 7) ORDER BY FIELD (id, 20, 21, 1, 7) Laravel Eloquent O">
+  <meta name="description" content="PHP array cheetsheetarray_keys: get array keys get array keys (取得 array key，成為新的 array) $new_array &#x3D; array_keys($array) Ref: https:&#x2F;&#x2F;www.php.net&#x2F;manual&#x2F;en&#x2F;function.array-keys.php  array_flip: flip arr">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to let mysql or laravel orm result sort by specific value?">
-<meta property="og:url" content="https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/index.html">
+<meta property="og:title" content="PHP array cheetsheet">
+<meta property="og:url" content="https://blog.nutoms.com/php-array-cheetsheet/index.html">
 <meta property="og:site_name" content="Terri&#39;s blog">
-<meta property="og:description" content="在 Laravel &#x2F; Mysql，如何讓 DB 的搜尋結果以指定的順序排序？ 問題：要取得 table 當中 id 為 20, 21, 1, 7 的資料，並要求取回的資料排序依照此順序  MySQL1SELECT * FROM table WHERE id IN (20, 21, 1, 7) ORDER BY FIELD (id, 20, 21, 1, 7) Laravel Eloquent O">
+<meta property="og:description" content="PHP array cheetsheetarray_keys: get array keys get array keys (取得 array key，成為新的 array) $new_array &#x3D; array_keys($array) Ref: https:&#x2F;&#x2F;www.php.net&#x2F;manual&#x2F;en&#x2F;function.array-keys.php  array_flip: flip arr">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2021-01-07T12:08:33.177Z">
-<meta property="article:modified_time" content="2021-02-07T13:47:07.835Z">
+<meta property="article:published_time" content="2021-04-25T04:59:10.000Z">
+<meta property="article:modified_time" content="2021-04-25T05:02:17.134Z">
 <meta property="article:author" content="Terri Chen">
-<meta property="article:tag" content="laravel">
+<meta property="article:tag" content="php array">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/">
+<link rel="canonical" href="https://blog.nutoms.com/php-array-cheetsheet/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>How to let mysql or laravel orm result sort by specific value? | Terri's blog</title>
+  <title>PHP array cheetsheet | Terri's blog</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCPC2XGB8V"></script>
     <script>
@@ -160,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/">
+    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/php-array-cheetsheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          How to let mysql or laravel orm result sort by specific value?
+          PHP array cheetsheet
         </h1>
 
         <div class="post-meta">
@@ -182,16 +182,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2021-01-07 20:08:33" itemprop="dateCreated datePublished" datetime="2021-01-07T20:08:33+08:00">2021-01-07</time>
+              <time title="創建時間：2021-04-25 12:59:10 / 修改時間：13:02:17" itemprop="dateCreated datePublished" datetime="2021-04-25T12:59:10+08:00">2021-04-25</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2021-02-07 21:47:07" itemprop="dateModified" datetime="2021-02-07T21:47:07+08:00">2021-02-07</time>
-              </span>
 
           
   
@@ -202,8 +196,8 @@
       </span>
       <span class="post-meta-item-text">Disqus：</span>
     
-    <a title="disqus" href="/let_mysql_or_laravel_orm_result_sort_by_specific_value/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="let_mysql_or_laravel_orm_result_sort_by_specific_value/" itemprop="commentCount"></span>
+    <a title="disqus" href="/php-array-cheetsheet/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="php-array-cheetsheet/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -218,15 +212,48 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="在-Laravel-Mysql，如何讓-DB-的搜尋結果以指定的順序排序？"><a href="#在-Laravel-Mysql，如何讓-DB-的搜尋結果以指定的順序排序？" class="headerlink" title="在 Laravel / Mysql，如何讓 DB 的搜尋結果以指定的順序排序？"></a>在 Laravel / Mysql，如何讓 DB 的搜尋結果以指定的順序排序？</h1><ul>
-<li>問題：要取得 table 當中 id 為 20, 21, 1, 7 的資料，並要求取回的資料排序依照此順序</li>
+        <h2 id="PHP-array-cheetsheet"><a href="#PHP-array-cheetsheet" class="headerlink" title="PHP array cheetsheet"></a>PHP array cheetsheet</h2><h3 id="array-keys-get-array-keys"><a href="#array-keys-get-array-keys" class="headerlink" title="array_keys: get array keys"></a><strong>array_keys</strong>: get array keys</h3><ul>
+<li>get array keys (取得 array key，成為新的 array)</li>
+<li><code>$new_array = array_keys($array)</code></li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-keys.php">https://www.php.net/manual/en/function.array-keys.php</a></li>
 </ul>
-<h2 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM table WHERE id IN (20, 21, 1, 7) ORDER BY FIELD (id, 20, 21, 1, 7)</span><br></pre></td></tr></table></figure>
-<h2 id="Laravel-Eloquent-ORM"><a href="#Laravel-Eloquent-ORM" class="headerlink" title="Laravel Eloquent ORM"></a>Laravel Eloquent ORM</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$id_list &#x3D; [20, 21, 1, 7];</span><br><span class="line">$id_list_string &#x3D; implode(&quot;, &quot;, $id_list);</span><br><span class="line"></span><br><span class="line">Table::whereIn(&#39;id&#39;, $id_list)</span><br><span class="line">    -&gt;orderByRaw(&quot;FIELD (id, &#123;$id_list_string&#125;)&quot;)</span><br><span class="line">    -&gt;get();</span><br></pre></td></tr></table></figure>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/8322849/mysql-order-by-specific-id-values">https://stackoverflow.com/questions/8322849/mysql-order-by-specific-id-values</a></li>
-<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/29115385/how-to-make-laravel-eloquent-in-query">https://stackoverflow.com/questions/29115385/how-to-make-laravel-eloquent-in-query</a></li>
-<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/36007877/how-to-sort-by-a-specific-value-in-laravel">https://stackoverflow.com/questions/36007877/how-to-sort-by-a-specific-value-in-laravel</a></li>
+<h3 id="array-flip-flip-array-key-and-value"><a href="#array-flip-flip-array-key-and-value" class="headerlink" title="array_flip: flip array key and value"></a><strong>array_flip</strong>: flip array key and value</h3><ul>
+<li>flip array key and value (把 array key 和 value 互換)</li>
+<li><code>$flipped = array_flip($input);</code></li>
+<li>useful when find a value in the array (在找是否含有某數值的時候，特別好用)</li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-flip.php">https://www.php.net/manual/en/function.array-flip.php</a></li>
+</ul>
+<h3 id="array-chunk-split-array-into-chunks"><a href="#array-chunk-split-array-into-chunks" class="headerlink" title="array_chunk: split array into chunks"></a><strong>array_chunk</strong>: split array into chunks</h3><ul>
+<li>split array into chunks (把 array 切成數個小 array)</li>
+<li><code>$new_array = array_chunk($input_array, 2)</code></li>
+<li><code>$new_array = array_chunk($input_array, 2, true)</code><ul>
+<li>true: keep original array key (如果設為 true 表示要保留 array key)</li>
+</ul>
+</li>
+<li>useful when data updating in batch (在批次匯入大量資料到 db 的時候好用)</li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-chunk.php">https://www.php.net/manual/en/function.array-chunk.php</a></li>
+</ul>
+<h3 id="array-column-get-specific-key-value-from-multidimensional-array"><a href="#array-column-get-specific-key-value-from-multidimensional-array" class="headerlink" title="array_column: get specific key value from multidimensional array"></a><strong>array_column</strong>: get specific key value from multidimensional array</h3><ul>
+<li>get specific key value from multidimensional array (多層 array，取得每個子層的某個鍵的數值拼成新 array)</li>
+<li>Get the column of first names from a recordset (取每個子層 key 為 first_name 的值，拼成新 array)<ul>
+<li><code>$first_names = array_column($records, &#39;first_name&#39;);</code></li>
+</ul>
+</li>
+<li>Get the column of last names from a recordset, indexed by the “id” column (取每個子層 key 為 first_name 的值，並且新 array key 為 id，拼成新 array)<ul>
+<li><code>$last_names = array_column($records, &#39;last_name&#39;, &#39;id&#39;);</code></li>
+</ul>
+</li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-column.php">https://www.php.net/manual/en/function.array-column.php</a></li>
+</ul>
+<h3 id="array-combine-creates-an-array-by-using-one-array-for-keys-and-another-for-its-values"><a href="#array-combine-creates-an-array-by-using-one-array-for-keys-and-another-for-its-values" class="headerlink" title="array_combine: creates an array by using one array for keys and another for its values"></a><strong>array_combine</strong>: creates an array by using one array for keys and another for its values</h3><ul>
+<li>creates an array by using one array for keys and another for its values (組合成對的兩個 array 成為新的 array，一個陣列為 key，一個陣列為 value)</li>
+<li><code>$c = array_combine($key_array, $value_array);</code></li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-combine.php">https://www.php.net/manual/en/function.array-combine.php</a></li>
+<li><a target="_blank" rel="noopener" href="https://stockwfj3.pixnet.net/blog/post/46322454">https://stockwfj3.pixnet.net/blog/post/46322454</a></li>
+</ul>
+<h3 id="array-search-find-if-the-value-in-the-array-尋找-array-是否有這個數值，有的話回傳-key"><a href="#array-search-find-if-the-value-in-the-array-尋找-array-是否有這個數值，有的話回傳-key" class="headerlink" title="array_search: find if the value in the array (尋找 array 是否有這個數值，有的話回傳 key)"></a><strong>array_search</strong>: find if the value in the array (尋找 array 是否有這個數值，有的話回傳 key)</h3><ul>
+<li><code>$key = array_search(&#39;value&#39;, $array);</code></li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-search">https://www.php.net/manual/en/function.array-search</a></li>
 </ul>
 
     </div>
@@ -237,7 +264,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/laravel/" rel="tag"># laravel</a>
+              <a href="/tags/php-array/" rel="tag"># php array</a>
           </div>
 
         
@@ -246,13 +273,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/how_to_add_react_js_environment_variables/" rel="prev" title="How to add environment variables in react js?">
-      <i class="fa fa-chevron-left"></i> How to add environment variables in react js?
+    <a href="/basic-php-domdocument-cheatsheet/" rel="prev" title="How to use basic php dom?">
+      <i class="fa fa-chevron-left"></i> How to use basic php dom?
     </a></div>
-      <div class="post-nav-item">
-    <a href="/background-script-in-Manifest-V3-chrome-extension/" rel="next" title="How to load background script in manifest V3 chrome extension?">
-      How to load background script in manifest V3 chrome extension? <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -318,7 +342,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8-Laravel-Mysql%EF%BC%8C%E5%A6%82%E4%BD%95%E8%AE%93-DB-%E7%9A%84%E6%90%9C%E5%B0%8B%E7%B5%90%E6%9E%9C%E4%BB%A5%E6%8C%87%E5%AE%9A%E7%9A%84%E9%A0%86%E5%BA%8F%E6%8E%92%E5%BA%8F%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">在 Laravel &#x2F; Mysql，如何讓 DB 的搜尋結果以指定的順序排序？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL"><span class="nav-number">1.1.</span> <span class="nav-text">MySQL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Laravel-Eloquent-ORM"><span class="nav-number">1.2.</span> <span class="nav-text">Laravel Eloquent ORM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">1.3.</span> <span class="nav-text">參考資料</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-array-cheetsheet"><span class="nav-number">1.</span> <span class="nav-text">PHP array cheetsheet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#array-keys-get-array-keys"><span class="nav-number">1.1.</span> <span class="nav-text">array_keys: get array keys</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-flip-flip-array-key-and-value"><span class="nav-number">1.2.</span> <span class="nav-text">array_flip: flip array key and value</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-chunk-split-array-into-chunks"><span class="nav-number">1.3.</span> <span class="nav-text">array_chunk: split array into chunks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-column-get-specific-key-value-from-multidimensional-array"><span class="nav-number">1.4.</span> <span class="nav-text">array_column: get specific key value from multidimensional array</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-combine-creates-an-array-by-using-one-array-for-keys-and-another-for-its-values"><span class="nav-number">1.5.</span> <span class="nav-text">array_combine: creates an array by using one array for keys and another for its values</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-search-find-if-the-value-in-the-array-%E5%B0%8B%E6%89%BE-array-%E6%98%AF%E5%90%A6%E6%9C%89%E9%80%99%E5%80%8B%E6%95%B8%E5%80%BC%EF%BC%8C%E6%9C%89%E7%9A%84%E8%A9%B1%E5%9B%9E%E5%82%B3-key"><span class="nav-number">1.6.</span> <span class="nav-text">array_search: find if the value in the array (尋找 array 是否有這個數值，有的話回傳 key)</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -436,9 +460,9 @@
 </script>
 <script>
   var disqus_config = function() {
-    this.page.url = "https://blog.nutoms.com/let_mysql_or_laravel_orm_result_sort_by_specific_value/";
-    this.page.identifier = "let_mysql_or_laravel_orm_result_sort_by_specific_value/";
-    this.page.title = "How to let mysql or laravel orm result sort by specific value?";
+    this.page.url = "https://blog.nutoms.com/php-array-cheetsheet/";
+    this.page.identifier = "php-array-cheetsheet/";
+    this.page.title = "PHP array cheetsheet";
     };
   NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
     if (window.DISQUS) {

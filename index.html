@@ -154,6 +154,121 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
+    <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/php-array-cheetsheet/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Terri Chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Terri's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/php-array-cheetsheet/" class="post-title-link" itemprop="url">PHP array cheetsheet</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時間：2021-04-25 12:59:10 / 修改時間：13:02:17" itemprop="dateCreated datePublished" datetime="2021-04-25T12:59:10+08:00">2021-04-25</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/php-array-cheetsheet/#disqus_thread" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="php-array-cheetsheet/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="PHP-array-cheetsheet"><a href="#PHP-array-cheetsheet" class="headerlink" title="PHP array cheetsheet"></a>PHP array cheetsheet</h2><h3 id="array-keys-get-array-keys"><a href="#array-keys-get-array-keys" class="headerlink" title="array_keys: get array keys"></a><strong>array_keys</strong>: get array keys</h3><ul>
+<li>get array keys (取得 array key，成為新的 array)</li>
+<li><code>$new_array = array_keys($array)</code></li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-keys.php">https://www.php.net/manual/en/function.array-keys.php</a></li>
+</ul>
+<h3 id="array-flip-flip-array-key-and-value"><a href="#array-flip-flip-array-key-and-value" class="headerlink" title="array_flip: flip array key and value"></a><strong>array_flip</strong>: flip array key and value</h3><ul>
+<li>flip array key and value (把 array key 和 value 互換)</li>
+<li><code>$flipped = array_flip($input);</code></li>
+<li>useful when find a value in the array (在找是否含有某數值的時候，特別好用)</li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-flip.php">https://www.php.net/manual/en/function.array-flip.php</a></li>
+</ul>
+<h3 id="array-chunk-split-array-into-chunks"><a href="#array-chunk-split-array-into-chunks" class="headerlink" title="array_chunk: split array into chunks"></a><strong>array_chunk</strong>: split array into chunks</h3><ul>
+<li>split array into chunks (把 array 切成數個小 array)</li>
+<li><code>$new_array = array_chunk($input_array, 2)</code></li>
+<li><code>$new_array = array_chunk($input_array, 2, true)</code><ul>
+<li>true: keep original array key (如果設為 true 表示要保留 array key)</li>
+</ul>
+</li>
+<li>useful when data updating in batch (在批次匯入大量資料到 db 的時候好用)</li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-chunk.php">https://www.php.net/manual/en/function.array-chunk.php</a></li>
+</ul>
+<h3 id="array-column-get-specific-key-value-from-multidimensional-array"><a href="#array-column-get-specific-key-value-from-multidimensional-array" class="headerlink" title="array_column: get specific key value from multidimensional array"></a><strong>array_column</strong>: get specific key value from multidimensional array</h3><ul>
+<li>get specific key value from multidimensional array (多層 array，取得每個子層的某個鍵的數值拼成新 array)</li>
+<li>Get the column of first names from a recordset (取每個子層 key 為 first_name 的值，拼成新 array)<ul>
+<li><code>$first_names = array_column($records, &#39;first_name&#39;);</code></li>
+</ul>
+</li>
+<li>Get the column of last names from a recordset, indexed by the “id” column (取每個子層 key 為 first_name 的值，並且新 array key 為 id，拼成新 array)<ul>
+<li><code>$last_names = array_column($records, &#39;last_name&#39;, &#39;id&#39;);</code></li>
+</ul>
+</li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-column.php">https://www.php.net/manual/en/function.array-column.php</a></li>
+</ul>
+<h3 id="array-combine-creates-an-array-by-using-one-array-for-keys-and-another-for-its-values"><a href="#array-combine-creates-an-array-by-using-one-array-for-keys-and-another-for-its-values" class="headerlink" title="array_combine: creates an array by using one array for keys and another for its values"></a><strong>array_combine</strong>: creates an array by using one array for keys and another for its values</h3><ul>
+<li>creates an array by using one array for keys and another for its values (組合成對的兩個 array 成為新的 array，一個陣列為 key，一個陣列為 value)</li>
+<li><code>$c = array_combine($key_array, $value_array);</code></li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-combine.php">https://www.php.net/manual/en/function.array-combine.php</a></li>
+<li><a target="_blank" rel="noopener" href="https://stockwfj3.pixnet.net/blog/post/46322454">https://stockwfj3.pixnet.net/blog/post/46322454</a></li>
+</ul>
+<h3 id="array-search-find-if-the-value-in-the-array-尋找-array-是否有這個數值，有的話回傳-key"><a href="#array-search-find-if-the-value-in-the-array-尋找-array-是否有這個數值，有的話回傳-key" class="headerlink" title="array_search: find if the value in the array (尋找 array 是否有這個數值，有的話回傳 key)"></a><strong>array_search</strong>: find if the value in the array (尋找 array 是否有這個數值，有的話回傳 key)</h3><ul>
+<li><code>$key = array_search(&#39;value&#39;, $array);</code></li>
+<li>Ref: <a target="_blank" rel="noopener" href="https://www.php.net/manual/en/function.array-search">https://www.php.net/manual/en/function.array-search</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
     <link itemprop="mainEntityOfPage" href="https://blog.nutoms.com/basic-php-domdocument-cheatsheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -924,12 +1039,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">標籤</span>
       </div>
   </nav>
